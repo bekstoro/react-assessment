@@ -11,6 +11,7 @@ const PATHS = {
   public: resolvePath('public'),
   dist: resolvePath('dist'),
   components: resolvePath('src/components'),
+  utils: resolvePath('src/utils'),
   services: resolvePath('src/services'),
 };
 
@@ -22,6 +23,7 @@ module.exports = {
     alias: {
       '@components': PATHS.components,
       '@services': PATHS.services,
+      '@utils': PATHS.utils,
     },
   },
   output: {

@@ -1,114 +1,66 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { useCallback, useEffect, useState } from 'react';
+import { Row, UserInfo, Users } from '@components/styled-components/UserList';
+import { debounce } from '@utils/debounce';
 
-const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  border: 1px solid #000;
-  padding: 20px;
-  
-  span {
-    display: block;
-    margin-bottom: 5px;
-  }
-`;
+export default function UserList() {
+  const [data, setData] = useState([]);
+  const [filter, setFilter] = useState('');
+  const [value, setValue] = useState('');
 
-const UserInfo = styled.div`
-  border-right: 1px solid #000;
-  text-align: left;
-  width: 260px;
-`;
-
-const Users = styled.div`
-  max-height: 300px;
-  overflow: scroll;
-  margin-top: 15px;
-`;
-
-const debounce = (func, wait = 5000) => {
-  let timeout = null;
-
-  const cleanup = () => {
-    if (timeout) clearTimeout(timeout);
-  };
-
-  return () => {
-    cleanup();
-
-    timeout = setTimeout(func, wait);
-  };
-};
-
-export default class UserList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      data: [],
-      filter: '',
-      value: ''
-    };
-  }
-
-  fetchData = () => {
-    const { filter } = this.state;
-    fetch(`https://jsonplaceholder.typicode.com/users${filter ? `?username=${encodeURIComponent(filter)}` : ''}`).then(async (response) => {
-      const data = await response.json();
-      this.setState({ data });
-    });
-  }
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  render() {
-    const { data, value } = this.state;
-
-    const setFilter = (e) => {
-      this.setState({ value: e.target.value });
-      const debounceFn = debounce((e) => {
-        this.setState({ filter: e.target.value }, this.fetchData);
+  const fetchUsers = useCallback(async () => {
+    fetch(`https://jsonplaceholder.typicode.com/users${filter ? `?username=${encodeURIComponent(filter)}` : ''}`)
+      .then(async (response) => {
+        const res = await response.json();
+        setData(res);
       });
+  }, [filter]);
 
-      debounceFn(e);
-    };
+  useEffect(() => {
+    fetchUsers();
+  }, [fetchUsers, filter]);
 
-    return (
+  const handleFilter = (e) => {
+    setValue(e.target.value);
+    const debounceFn = debounce(() => {
+      setFilter(e.target.value);
+    });
+
+    debounceFn();
+  };
+
+  return (
+    <div>
       <div>
-        <div>
-          Filter:
-          <input
-            type="text"
-            onChange={setFilter}
-            value={value}
-            placeholder="Enter username"
-          />
-        </div>
-        <Users>
-          {data.map((user) => (
-            <Row key={user.id}>
-              <UserInfo>
-                <span>{`Name: ${user.name}`}</span>
-                <span>{`Username: ${user.username}`}</span>
-              </UserInfo>
-              <div>
-                <div>
-                  <span>{user.address.street}</span>
-                  <span>{user.address.suite}</span>
-                  <span>{user.address.city}</span>
-                  <span>{user.address.zipcode}</span>
-                </div>
-                <div>
-                  <span>{user.email}</span>
-                  <span>{user.phone}</span>
-                </div>
-              </div>
-            </Row>
-          ))}
-        </Users>
+        Filter:
+        <input
+          type="text"
+          onChange={handleFilter}
+          value={value}
+          placeholder="Enter username"
+        />
       </div>
-    );
-  }
+      <Users>
+        {data.map((user) => (
+          <Row key={user.id}>
+            <UserInfo>
+              <span>{`Name: ${user.name}`}</span>
+              <span>{`Username: ${user.username}`}</span>
+            </UserInfo>
+            <div>
+              <div>
+                <span>{user.address?.street}</span>
+                <span>{user.address?.suite}</span>
+                <span>{user.address?.city}</span>
+                <span>{user.address?.zipcode}</span>
+              </div>
+              <div>
+                <span>{user.email}</span>
+                <span>{user.phone}</span>
+              </div>
+            </div>
+          </Row>
+        ))}
+      </Users>
+    </div>
+  );
 }
