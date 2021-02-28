@@ -1,6 +1,148 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Task styled components BlueButton renders correctly 1`] = `
+.c0 {
+  width: 300px;
+  height: 70px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+.c1 {
+  background-color: #5050ff;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  />
+</div>
+`;
+
+exports[`Task styled components Button renders correctly 1`] = `
+.c0 {
+  width: 300px;
+  height: 70px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Task styled components Content renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > button:not(:first-child) {
+  margin-top: 20px;
+}
+
+<div>
+  <section
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Task styled components GreenButton renders correctly 1`] = `
+.c0 {
+  width: 300px;
+  height: 70px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+.c1 {
+  background-color: #53ff53;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  />
+</div>
+`;
+
+exports[`Task styled components Heading renders correctly 1`] = `
+.c0 {
+  color: #216298;
+}
+
+<div>
+  <h1
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Task styled components RedButton renders correctly 1`] = `
+.c0 {
+  width: 300px;
+  height: 70px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+.c1 {
+  background-color: #ff5252;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  />
+</div>
+`;
+
+exports[`Task styled components Task renders correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App App renders correctly 1`] = `
+<div>
+  <nav
+    class="Nav__NavWrapper-sc-13du1es-0 cZYmJv"
+  >
+    <a
+      aria-current="page"
+      class="Nav__NavButton-sc-13du1es-1 idRylV active"
+      href="/"
+    >
+      Task One
+    </a>
+    <a
+      class="Nav__NavButton-sc-13du1es-1 idRylV"
+      href="/task-two"
+    >
+      Task Two
+    </a>
+  </nav>
+  <div
+    class="Task-sc-7z955n-0 dBJrLg"
+  >
+    <h1
+      class="Task__Heading-sc-7z955n-1 hiEtuP"
+    >
+      Task One
+    </h1>
+    <div>
+      <div>
+        Filter:
+        <input
+          placeholder="Enter username"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="UserList__Users-g96ac2-2 fpNOEP"
+      />
+    </div>
+  </div>
+</div>
+`;

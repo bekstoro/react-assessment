@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Nav renders correctly 1`] = `
+<div>
+  <nav
+    class="Nav__NavWrapper-sc-13du1es-0 cZYmJv"
+  >
+    <a
+      aria-current="page"
+      class="Nav__NavButton-sc-13du1es-1 idRylV active"
+      href="/"
+    >
+      Task One
+    </a>
+    <a
+      class="Nav__NavButton-sc-13du1es-1 idRylV"
+      href="/task-two"
+    >
+      Task Two
+    </a>
+  </nav>
+</div>
+`;

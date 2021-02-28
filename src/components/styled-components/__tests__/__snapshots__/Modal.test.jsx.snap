@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal styled components BaseModal renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #ea2929;
+  border-radius: 15px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components BigModal renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #ea2929;
+  border-radius: 15px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.c1 {
+  width: 600px;
+  height: 300px;
+  top: calc(50% - 150px);
+  left: calc(50% - 330px);
+}
+
+<div>
+  <div
+    class="c0 c1"
+  />
+</div>
+`;
+
+exports[`Modal styled components LoadingIcon renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 10px solid #174d73;
+  border-top: 10px solid transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  -webkit-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation: eoUyJr 2s linear infinite;
+  animation: eoUyJr 2s linear infinite;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components LoadingText renders correctly 1`] = `
+.c0 {
+  font-weight: 500;
+  color: #3498db;
+  margin-bottom: 0;
+}
+
+<div>
+  <h3
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalButtons renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+<div>
+  <section
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalCancellationButton renders correctly 1`] = `
+.c0 {
+  width: 100px;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid #03629a;
+  border-radius: 4px;
+  color: #03629a;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalConfirmationButton renders correctly 1`] = `
+.c0 {
+  width: 100px;
+  padding: 10px 0;
+  background-color: #d7eef7;
+  border: 1px solid #d7eef7;
+  border-radius: 4px;
+  color: #03629a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalContent renders correctly 1`] = `
+.c0 {
+  width: 100%;
+}
+
+.c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0 textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  color: #03629a;
+}
+
+<div>
+  <section
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalError renders correctly 1`] = `
+.c0 {
+  color: #ea2929;
+  margin: 0;
+}
+
+<div>
+  <h5
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalInput renders correctly 1`] = `
+.c0 {
+  width: 200px;
+}
+
+<div>
+  <input
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalText renders correctly 1`] = `
+.c0 {
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+<div>
+  <h4
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components ModalTitle renders correctly 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  margin-top: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+<div>
+  <h3
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components RedIcon renders correctly 1`] = `
+.c0 {
+  color: #ea2929;
+  margin-right: 10px;
+}
+
+<div>
+  <i
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal styled components SmallModal renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #ea2929;
+  border-radius: 15px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.c1 {
+  width: 600px;
+  height: 130px;
+  top: calc(50% - 65px);
+  left: calc(50% - 330px);
+}
+
+<div>
+  <div
+    class="c0 c1"
+  />
+</div>
+`;
+
+exports[`Modal styled components SmallModalCentered renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #ea2929;
+  border-radius: 15px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.c1 {
+  width: 600px;
+  height: 130px;
+  top: calc(50% - 65px);
+  left: calc(50% - 330px);
+}
+
+.c2 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <div
+    class="c0 c1 c2"
+  />
+</div>
+`;

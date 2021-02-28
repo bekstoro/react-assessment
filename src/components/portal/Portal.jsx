@@ -2,10 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 
-const element = document.createElement('div');
-const modalRoot = document.getElementById('modal');
-
 export default function Portal(props) {
+  const element = document.createElement('div');
+  const modalRoot = document.getElementById('app');
   const ref = useRef(null);
 
   const closeModal = (e) => {

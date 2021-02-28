@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskTwo TaskTwo renders correctly 1`] = `
+<div>
+  <div
+    class="Task-sc-7z955n-0 dBJrLg"
+  >
+    <h1
+      class="Task__Heading-sc-7z955n-1 hiEtuP"
+    >
+      Task Two
+    </h1>
+    <section
+      class="Task__Content-sc-7z955n-6 fejPFW"
+    >
+      <button
+        class="Task__Button-sc-7z955n-2 Task__RedButton-sc-7z955n-3 joftDn kWdQeZ"
+      >
+        open loading modal
+      </button>
+      <button
+        class="Task__Button-sc-7z955n-2 Task__GreenButton-sc-7z955n-4 joftDn ciWuGS"
+      >
+        open confirmation modal
+      </button>
+      <button
+        class="Task__Button-sc-7z955n-2 Task__BlueButton-sc-7z955n-5 joftDn iEvgG"
+      >
+        open confirmation extended modal
+      </button>
+    </section>
+  </div>
+</div>
+`;

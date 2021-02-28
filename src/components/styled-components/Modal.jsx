@@ -41,8 +41,8 @@ export const SmallModalCentered = styled(SmallModal)`
 // other components
 export const LoadingIcon = styled.div`
   display: flex;
-  border: 10px solid #174d73; /* Light grey */
-  border-top: 10px solid transparent; /* Blue */
+  border: 10px solid #174d73;
+  border-top: 10px solid transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;

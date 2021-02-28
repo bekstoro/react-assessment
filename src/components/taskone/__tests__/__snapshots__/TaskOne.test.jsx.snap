@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskOne TaskOne renders correctly 1`] = `
+<div>
+  <div
+    class="Task-sc-7z955n-0 dBJrLg"
+  >
+    <h1
+      class="Task__Heading-sc-7z955n-1 hiEtuP"
+    >
+      Task One
+    </h1>
+    <div>
+      <div>
+        Filter:
+        <input
+          placeholder="Enter username"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="UserList__Users-g96ac2-2 fpNOEP"
+      />
+    </div>
+  </div>
+</div>
+`;
