@@ -6,30 +6,44 @@ export const Task = styled.div`
   width: 800px;
   margin: auto;
 `;
-export const Content = styled.div`
-  text-align: justify;
-`;
-export const StyledList = styled.ol`
-  text-align: justify;
-  
-  li {
-    line-height: 2;
-  }
-`;
+
 export const Heading = styled.h1`
   color: #216298;
 `;
-export const DesignList = styled.div`
+
+export const Button = styled.button`
+  width: 300px;
+  height: 70px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  
+  &:hover {
+    opacity: 0.5;
+  }
+`;
+
+export const RedButton = styled(Button)`
+  background-color: #ff5252;
+`;
+
+export const GreenButton = styled(Button)`
+  background-color: #53ff53;
+`;
+
+export const BlueButton = styled(Button)`
+  background-color: #5050ff;
+`;
+
+export const Content = styled.section`
   display: flex;
   flex-direction: column;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  img {
-    width: 80%;
-    margin: 0 auto;
+  align-items: center;
+  
+  & > button:not(:first-child) {
+    margin-top: 20px;
   }
 `;

@@ -11,6 +11,7 @@ const PATHS = {
   public: resolvePath('public'),
   dist: resolvePath('dist'),
   components: resolvePath('src/components'),
+  constants: resolvePath('src/constants'),
   utils: resolvePath('src/utils'),
   services: resolvePath('src/services'),
 };
@@ -22,6 +23,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
       '@components': PATHS.components,
+      '@constants': PATHS.constants,
       '@services': PATHS.services,
       '@utils': PATHS.utils,
     },
