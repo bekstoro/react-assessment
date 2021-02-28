@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, within } from '@testing-library/react';
 
 import LoadingModal from '@components/modal/LoadingModal';
 
@@ -11,7 +11,13 @@ describe('LoadingModal', () => {
   });
 
   it('LoadingModal renders correctly', () => {
-    const { container } = render(<LoadingModal isOpen closeModal={jest.fn()} />);
+    render(<LoadingModal isOpen closeModal={jest.fn()} />);
+    const { getByTestId } = within(document.getElementById('app'));
+    expect(getByTestId('loading-modal')).toMatchSnapshot();
+  });
+
+  it('LoadingModal should return empty div', () => {
+    const { container } = render(<LoadingModal isOpen={false} closeModal={jest.fn()} />);
     expect(container).toMatchSnapshot();
   });
 });

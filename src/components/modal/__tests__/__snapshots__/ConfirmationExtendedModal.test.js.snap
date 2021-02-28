@@ -1,3 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ConfirmationExtendedModal ConfirmationExtendedModal renders correctly 1`] = `<div />`;
+exports[`ConfirmationExtendedModal ConfirmationExtendedModal renders correctly 1`] = `
+<div
+  class="Modal__BaseModal-sc-1081dim-0 Modal__BigModal-sc-1081dim-1 cyuJJj eGHCUl"
+  data-testid="confirmation-extended-modal"
+>
+  <h3
+    class="Modal__ModalTitle-sc-1081dim-13 iVwSGl"
+  >
+    <i
+      class="Modal__RedIcon-sc-1081dim-14 bVReHm material-icons"
+    >
+      warning
+    </i>
+    
+  </h3>
+  <section
+    class="Modal__ModalContent-sc-1081dim-9 fQvezR"
+  >
+    <section />
+  </section>
+  <input
+    class="Modal__ModalInput-sc-1081dim-11 krorRr"
+    value=""
+  />
+  <section
+    class="Modal__ModalButtons-sc-1081dim-6 fAOmbq"
+  >
+    <button
+      class="Modal__ModalConfirmationButton-sc-1081dim-8 jJDWcp"
+    />
+    <button
+      class="Modal__ModalCancellationButton-sc-1081dim-7 gufRcH"
+    />
+  </section>
+</div>
+`;
+
+exports[`ConfirmationExtendedModal ConfirmationExtendedModal should return empty div 1`] = `<div />`;

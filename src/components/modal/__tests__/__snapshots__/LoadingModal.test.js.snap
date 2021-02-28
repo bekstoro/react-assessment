@@ -1,3 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoadingModal LoadingModal renders correctly 1`] = `<div />`;
+exports[`LoadingModal LoadingModal renders correctly 1`] = `
+<div
+  class="Modal__BaseModal-sc-1081dim-0 Modal__SmallModal-sc-1081dim-2 Modal__SmallModalCentered-sc-1081dim-3 cyuJJj bOgRmL iwQtpG"
+  data-testid="loading-modal"
+>
+  <div
+    class="Modal__LoadingIcon-sc-1081dim-4 cmqSzZ"
+  />
+  <h3
+    class="Modal__LoadingText-sc-1081dim-5 gTCjkZ"
+  >
+    Data is loading
+  </h3>
+</div>
+`;
+
+exports[`LoadingModal LoadingModal should return empty div 1`] = `<div />`;

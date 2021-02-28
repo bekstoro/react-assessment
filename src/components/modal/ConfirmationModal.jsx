@@ -25,7 +25,7 @@ export default function ConfirmationModal({
 
   return (
     <Portal closeModal={closeModal}>
-      <SmallModal>
+      <SmallModal data-testid="confirmation-modal">
         <ModalTitle>
           <RedIcon className="material-icons">warning</RedIcon>
           {title}

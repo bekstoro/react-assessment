@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, within } from '@testing-library/react';
 
 import ConfirmationModal from '@components/modal/ConfirmationModal';
 
@@ -11,13 +11,29 @@ describe('ConfirmationModal', () => {
   });
 
   it('ConfirmationModal renders correctly', () => {
-    const { container } = render(
+    render(
       <ConfirmationModal
         closeModal={jest.fn()}
         cancellationButtonText=""
         confirmationButtonText=""
         confirmModal={jest.fn()}
         isOpen
+        message=""
+        title=""
+      />
+    );
+    const { getByTestId } = within(document.getElementById('app'));
+    expect(getByTestId('confirmation-modal')).toMatchSnapshot();
+  });
+
+  it('ConfirmationModal should return empty div', () => {
+    const { container } = render(
+      <ConfirmationModal
+        closeModal={jest.fn()}
+        cancellationButtonText=""
+        confirmationButtonText=""
+        confirmModal={jest.fn()}
+        isOpen={false}
         message=""
         title=""
       />

@@ -31,7 +31,7 @@ export default function ConfirmationExtendedModal({
 
   return (
     <Portal closeModal={closeModal}>
-      <BigModal>
+      <BigModal data-testid="confirmation-extended-modal">
         <ModalTitle>
           <RedIcon className="material-icons">warning</RedIcon>
           {title}

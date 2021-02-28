@@ -9,7 +9,7 @@ export default function LoadingModal({ isOpen, closeModal }) {
 
   return (
     <Portal closeModal={closeModal}>
-      <SmallModalCentered>
+      <SmallModalCentered data-testid="loading-modal">
         <LoadingIcon />
         <LoadingText>Data is loading</LoadingText>
       </SmallModalCentered>
